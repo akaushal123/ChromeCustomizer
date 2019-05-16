@@ -1,0 +1,46 @@
+body
+{
+  background-size: 100%;
+  background-image: url('13.jpg');
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: black;
+    opacity: 0.75;
+}
+#weather_widget
+{
+  align-self:  right;
+  background-color: transparent;
+  font-family:"Rockwell";
+  padding-left: 77%;
+  border: 0px;
+  font-size: 16px;
+  color:  white;
+}
+#greet
+{
+  font-family:"Rockwell";
+  padding-left:40%;
+  align:  center;
+  background-color: transparent;
+  height: 40px;
+  width: 500px;
+  border: 0px;
+  font-size: 30px;
+  color:  white;
+}
+#date
+{
+  text-align: left;
+  font-size: 30px;
+  font-family:"Rockwell";
+  color: white;
+  padding-right: 25px;
+}
+#time
+{
+  text-align: center;
+  font-size: 150px;
+  font-family:"Rockwell";
+  color: white;
+}

@@ -1,0 +1,30 @@
+{
+  "name": "Chrome Customiser",
+  "description" : "Base Level Extension",
+  "version": "1.0",
+  "manifest_version": 2,
+
+
+  "description": "Used to customize the chrome newtab",
+  "icons": {"128":"ico.png"},
+
+  "chrome_url_overrides" : {
+    "newtab": "newtab.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*/_/chrome/newtab*","http://www.geoplugin.net/javascript.gp"],
+      "css": ["style.css"],
+      "js": [ "getJSON.js","date.js","popup.js", "weather.js"]
+    }
+  ],
+  "permissions": [
+    "geolocation",
+    "webRequest",
+    "tabs",
+    "identity",
+    "privacy",
+    "*://api.openweathermap.org/*",
+    "http://www.geoplugin.net/javascript.gp"
+  ]
+}
